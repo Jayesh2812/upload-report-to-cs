@@ -1,0 +1,26 @@
+{
+  "name": "upload-report-to-cs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jayesh2812/upload-report-to-cs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jayesh2812/upload-report-to-cs/issues"
+  },
+  "homepage": "https://github.com/Jayesh2812/upload-report-to-cs#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "axios": "^1.2.2",
+    "form-data": "^4.0.0"
+  }
+}

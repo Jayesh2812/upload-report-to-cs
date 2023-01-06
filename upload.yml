@@ -1,0 +1,26 @@
+name: 'Upload report to ContentStack'
+description: 'Upload the index.html of a test report at provided path to ContentStack'
+inputs:
+  path: 
+    description: Path to test folder containing index.html
+    required: true
+
+  management_token:  # id of input
+    description: 'Management Token'
+    required: true
+
+  api_key:  # id of input
+    description: 'Api Key'
+    required: true
+
+  parent_uid:
+    description: "Folder UID"
+    required: false
+    default: null
+    
+outputs:
+  link: # id of output
+    description: 'Link where the asset is uploaded'
+runs:
+  using: 'node16'
+  main: 'index.js'
