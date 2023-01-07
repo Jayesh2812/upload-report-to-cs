@@ -15966,14 +15966,14 @@ try {
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2);
-  console.log(`The event payload: ${payload}`);
+  // console.log(`The event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
 }
 
 async function postReport({ managementToken, apiKey, parentUid, path }) {
   var data = new FormData();
-  data.append("asset[upload]", fs.createReadStream(path));
+  data.append("asset[upload]", fs.createReadStream(`${path}index.html`));
   data.append("asset[parent_uid]", parentUid);
 
   var config = {
