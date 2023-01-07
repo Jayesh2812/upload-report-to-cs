@@ -13,7 +13,7 @@ inputs:
     description: 'Api Key'
     required: true
 
-  parent_uid:
+  parent_folder_uid:
     description: "Folder UID"
     required: false
     default: null

@@ -15956,7 +15956,7 @@ try {
   const managementToken = core.getInput("management_token", { required: true });
   const apiKey = core.getInput("api_key", { required: true });
   const path = core.getInput("path", { required: true });
-  const parentUid = core.getInput("parent_uid");
+  const parentUid = core.getInput("parent_folder_uid");
 
   const time = new Date().toTimeString();
   console.log({ managementToken, apiKey, parentUid, path });
