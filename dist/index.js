@@ -15995,7 +15995,8 @@ async function postReport({ managementToken, apiKey, parentUid, path }) {
       console.log(url);
     })
     .catch(function (error) {
-      core.setFailed(error)
+      core.setFailed(error.response.data)
+      console.log(error.response.data)
     });
 }
 
