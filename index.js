@@ -44,10 +44,11 @@ async function postReport({ managementToken, apiKey, parentUid, path }) {
   axios(config)
     .then(function (response) {
       const url = response.data.asset.url;
+      core.setOutput("link", url)
       console.log(url);
     })
     .catch(function (error) {
-      console.log(error);
+      core.setFailed(error)
     });
 }
 
